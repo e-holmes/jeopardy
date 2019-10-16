@@ -15,3 +15,7 @@ table{
 #qs_hide{
     display: none;
 }
+
+#reset-btn{
+    margin:200px;
+}
