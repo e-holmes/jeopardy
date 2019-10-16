@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jeapordy!</title>
+
+        <!-- BootStrap Links -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Advent+Pro|Kaushan+Script|Satisfy|Shadows+Into+Light&display=swap"
+            rel="stylesheet">
+
+        <!--custom stylesheet -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- Firebase References -->
+        <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-database.js"></script>
+
+        <!-- moment Reference -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+        <!-- JQUERY Reference -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            
+            <!-- <div class="jumbotron text-center"> -->
+                <h1 class="display-1" id="dashBoardheader"><strong>Jeapordy</strong></h1>
+
+                <div class="row d-flex justify-content-center">
+                    <section class="col-8 table-load">
+                    </section>
+                </div>
+                <div class="row  d-flex justify-content-center">
+                    <section id="qs_hide" class="col-8">
+                        <p id="col1-row2" class="qs">Question 1</p>
+                        <p id="col1-row3" class="qs">Question 2</p>
+                        <p id="col1-row4" class="qs">Question 3</p>
+                        <p id="col1-row5" class="qs">Question 4</p>
+                        <p id="col1-row6" class="qs">Question 5</p>
+
+                        <p id="col2-row2" class="qs">Question 6</p>
+                        <p id="col2-row3" class="qs">Question 7</p>
+                        <p id="col2-row4" class="qs">Question 8</p>
+                        <p id="col2-row5" class="qs">Question 9</p>
+                        <p id="col2-row6" class="qs">Question 10</p>
+
+                        <p id="col3-row2" class="qs">Question 11</p>
+                        <p id="col3-row3" class="qs">Question 12</p>
+                        <p id="col3-row4" class="qs">Question 13</p>
+                        <p id="col3-row5" class="qs">Question 14</p>
+                        <p id="col3-row6" class="qs">Question 15</p>
+
+                        <p id="col4-row2" class="qs">Question 16</p>
+                        <p id="col4-row3" class="qs">Question 17</p>
+                        <p id="col4-row4" class="qs">Question 18</p>
+                        <p id="col4-row5" class="qs">Question 19</p>
+                        <p id="col4-row6" class="qs">Question 20</p>
+
+                        <p id="col5-row2" class="qs">Question 21</p>
+                        <p id="col5-row3" class="qs">Question 22</p>
+                        <p id="col5-row4" class="qs">Question 23</p>
+                        <p id="col5-row5" class="qs">Question 24</p>
+                        <p id="col5-row6" class="qs">Question 25</p>
+                    </section>
+                </div>
+        </div>
+    </body>
+    <script src="assets/javascript/app.js"></script>
+</html>
