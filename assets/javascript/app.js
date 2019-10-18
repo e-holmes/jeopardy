@@ -26,7 +26,6 @@ firebase.database().ref().on("value", function(snapshot) {
         onTable = "true";
         question = "PaceHolder";
         firebasePageStatus(table, onTable, question);
-        location.reload();
     })
     // log contents
     contents = snapshot.val();
@@ -44,6 +43,7 @@ firebase.database().ref().on("value", function(snapshot) {
         // empty table and question display
         $(".table-load").empty();
         $("#Qdisplay").empty();
+        $("#return_btn").empty();
         
         // place table
         $(".table-load").append(tableStored);
@@ -59,9 +59,11 @@ firebase.database().ref().on("value", function(snapshot) {
         // empty table and question display
         $(".table-load").empty();
         $("#Qdisplay").empty();
+        $("#return_btn").empty();
 
         // place question && Submit Button
-        $("#Qdisplay").append(question +"<button id='submit'>Return</button>");
+        $("#Qdisplay").append(question);
+        $("#return_btn").append("<button id='submit'>Return</button>");
   
         // Set button click response
         $("#submit").on("click", function() {
@@ -70,8 +72,6 @@ firebase.database().ref().on("value", function(snapshot) {
             onTable = "true";
             // store table, page, and question
             firebasePageStatus(table, onTable, question);
-            // reload page
-            location.reload();
         })
         }
     });
@@ -88,6 +88,7 @@ firebase.database().ref().on("value", function(snapshot) {
         table = $(".table-load").html();
         console.log("TABLE UPDATE STORAGE");
         $("#Qdisplay").empty();
+        $("#return_btn").empty();
         
     };
     

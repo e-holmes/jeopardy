@@ -22,6 +22,11 @@ th{
     display: none;
 }
 
-#reset-btn{
+#lower{
     margin:300px;
+}
+
+
+#reset{
+    color: red;
 }
