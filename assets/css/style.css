@@ -12,10 +12,16 @@ table{
     width: 100%;
 }
 
+th{
+    width: 100px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 #qs_hide{
     display: none;
 }
 
 #reset-btn{
-    margin:200px;
+    margin:300px;
 }
